@@ -39,7 +39,8 @@
         grid-column-gap: 10px;
         grid-row-gap: 10px;
         padding: 55px 68px 68px 55px;
-        margin: 68px;
+        margin: 65px 0 65px 0;
+        width: 1200px;
         &__item {
             & span {
                 position: absolute;
@@ -61,24 +62,30 @@
         }
     }
     
+    &__text_2 {
+        position: relative;
+    }
     &__description_2 {
-        // position: absolute;
         font-weight: 400;
         font-size: 18px;
         line-height: 160%;
         width: 634px;
         color: $Grayscale10;
         float: right;
-        // right: 0;
     }
-    &__botton {
-        border: none;
+
+    a {
+        position: absolute;
         float: right;
         padding: 14px 32px;
+        top: 250px;
+        right: 34vw;
         background: $PrimaryBLue100;
         color: white;
     }
 }
 
-
-
+.banner {
+    width: 100%;
+    padding: 100px 0 0 0;
+}
