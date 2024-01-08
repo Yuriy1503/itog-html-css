@@ -2,7 +2,7 @@
 
 .footer {
     &__container {
-        position: absolute;
+        position: static;
         background: $PrimaryBLue100;
         width: 100%;
         height: 471px;
