@@ -7,6 +7,7 @@
 
     .container {
         width: 100%;
+        margin: 0 15px 0 0;
     }
 
     .header {
@@ -30,6 +31,7 @@
     .hero {
         #hero__img {
             width: 100%;
+            margin: 0 15px;
         }
 
         &__title {
@@ -69,6 +71,7 @@
         }
     }
 
+    
     .inf__block {
         width: 100%;
         grid-template-columns: 33fr;
@@ -247,6 +250,7 @@
         &__number {
             left: 469px;
             margin: 606px 0 0 0;
+            width: 288px;
         }
     }
 
@@ -263,6 +267,10 @@
 }
 
 @media screen and (max-width: 767px) {
+    .container {
+        width: auto;
+        margin: 0 15px;
+    }
     .header {
         margin-top: 15px;
 
@@ -272,7 +280,6 @@
 
         .nav {
             width: auto;
-
             &__item {
                 padding: 12px 20px;
 
@@ -290,4 +297,278 @@
             }
         }
     }
+
+    .hero {
+        padding: 0;
+        #hero__img {
+            height: 200px;
+        }
+
+        &__title {
+            font-size: 24px;
+            max-width: 100%;
+            margin-bottom: 20px;
+
+            &::after {
+                width: 0;
+            }
+            &_smaller {
+                font-size: 24px;
+            }
+        }
+        .hero__parametrs {
+            position: static;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 15px;
+            &:not(.hero__parametrs_large) {
+                position: absolute;
+                top: auto;
+                right: 15px;
+                height: 90px;
+                width: 150px;
+            }
+            &__item {
+                padding: 20px 0;
+                span {
+                    font-size: 10px;
+                    padding-bottom: 5px;
+                }
+                strong {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .hero-nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .nav__item {
+            font-size: 14px;
+            text-align: center;
+            flex: 1;
+            display: block;
+            margin: 15px 5px;
+        }
+    }
+    .inf {
+        a {
+            right: 70vw;
+        }
+        &__title {
+            font-size: 20px;
+            width: 100%;
+        }
+        &__subtitle {
+            font-size: 12px;
+            &::after {
+                width: 267px;
+                top: 528px;
+            }
+        }
+        &__description_1 {
+            font-size: 16px;
+            width: 100%;
+        }
+        &__block {
+            grid-template-columns: 33fr;
+            width: 100%;
+            img {
+                width: 70px;
+                height: 70px;
+            }
+            &__item {
+                &__title {
+                    padding: 30px;
+                    font-size: 16px;
+                }
+            }
+        }
+        &__description_2 {
+            font-size: 16px;
+            width: 100%;
+        }
+    }
+    .description__inf {
+        margin: 0;
+        font-size: 14px;
+        width: 100%;
+    }
+    .banner {
+        height: 250px;
+        margin-top: 78px;
+    }
+    .map {
+        &__title{
+            &::after {
+                width: 222px;
+            }
+        }
+        &__widget {
+            height: 500px;
+        }
+    }
+
+    .gallery {
+        margin: 0;
+        &__title {
+            font-size: 20px;
+        }
+        &__subtitle {
+            font-size: 12px;
+            &::after {
+                width: 222px;
+                margin: 6px;
+            }
+        }
+        &__wrapper {
+            display: grid;
+            grid-template-rows: repeat(7,300px);
+            grid-template-columns: 343px;
+            grid-column-gap: 10px;
+            .box1 {
+                grid-column-start: 1;
+                grid-column-end: 1; 
+                grid-row-start: 1;
+                grid-row-end: 1;
+        
+                &::before {
+                    width: 254px;
+                    margin: 253px 69px 8px 20px;
+                }
+            }
+        
+            .box2 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 4;
+                grid-row-end: 6;
+        
+                &::before {
+                    width: 233px;
+                    margin: 533px 67px 20px 22px;
+                }
+            }
+        
+            .box3 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 6;
+                grid-row-end: 6;
+        
+                &::before {
+                    width: 233px;
+                    margin: 242px 81px 20px 30px;
+                }
+            }
+        
+            .box4 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 2;
+                grid-row-end: 2;
+        
+                &::before {
+                    width: 222px;
+                    margin: 212px 90px 30px 20px;
+                }
+            }
+        
+            .box5 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 3;
+                grid-row-end: 3;
+        
+                &::before {
+                    width: 254px;
+                    margin: 232px 69px 30px 20px;
+                }
+            }
+        
+            .box6 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 7;
+                grid-row-end: 7;
+        
+                &::before {
+                    width: 233px;
+                    margin: 222px 81px 20px 30px;
+                }
+            }
+        }
+    }
+    .plans {
+        &__title {
+            font-size: 12px;
+            &::after {
+                width: 247px;
+                margin: 7px;
+            }
+        }
+        &__block {
+            grid-template-columns: 300px;
+            grid-template-rows: repeat(5,269px);
+            justify-content: center;
+        }
+    }
+    .pdf {
+        &__title {
+            font-size: 20px;
+            width: 100%;
+        }
+        &__subtitle {
+            font-size: 12px;
+            &::after {
+                width: 265px;
+            }
+        }
+        &__spisok {
+            font-size: 16px;
+        }
+        &__image {
+            width: 113px;
+        }
+        &__link {
+            left: 15px;
+            margin-top: 279px;
+        }
+    }
+    .footer {
+        position: absolute;
+        width: 100%;
+    }
+    .footer__container {
+        width: 100%;
+        height: 709px;
+        margin: 250px 0 0 0;
+    }
+    .footer__zagolovok {
+        font-size: 20px;
+        margin: 108px 15px 0 15px;
+    }
+    .order__form {
+        margin: 272px 15px 0 15px;
+        float: left;
+    }
+    .order__input {
+        font-size: 16px;
+    }
+    .button__zayavka {
+        font-size: 14px;
+    }
+    .footer__logo {
+        font-size: 24px;
+        margin: 641px 182px 27px 15px;
+    }
+    .footer__number {
+        font-size: 24px;
+        margin: 591px 0px 0 15px;
+        width: 216px;
+        right: auto;
+    }
+
 }
