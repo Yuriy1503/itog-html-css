@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="css/header.min.css">
-  <link rel="stylesheet" href="css/hero.min.css">
-  <link rel="stylesheet" href="css/inf.min.css">
-  <link rel="stylesheet" href="css/pdf.min.css">
-  <link rel="stylesheet" href="css/about.min.css">
-  <link rel="stylesheet" href="css/gallery.min.css">
+  <!-- <link rel="stylesheet" href="./normalize/normalize.css"> -->
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/header.min.css">
+  <link rel="stylesheet" href="./css/hero.min.css">
+  <link rel="stylesheet" href="./css/inf.min.css">
+  <link rel="stylesheet" href="./css/pdf.min.css">
+  <link rel="stylesheet" href="./css/about.min.css">
+  <link rel="stylesheet" href="./css/gallery.min.css">
+  <link rel="stylesheet" href="./css/media.min.css">
+
   <title>БК “Ясенево” | Главная</title>
 </head>
 <body>
@@ -27,7 +31,7 @@
               <li class="nav__item nav__item_button">
                 <a href="tel:+74952214022">
                   <span>+7 (495) 221-40-22</span>
-                  <img class="nav__item__image" src="assets/images/phone.png" alt="">
+                  <img class="nav__item__image" src="./assets/images/phone.png" alt="">
                 </a>
               </li>
             </ul>
@@ -36,10 +40,10 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <section class="hero">
+      <section class="hero">
+        <div class="container">
           <h1 class="hero__title">Офисы класса “А” в бизнес-квартале “Ясенево”</h1>
-          <div class="hero__parametrs hero__parametrs_large">
+          <div id="hero__parametrs" class="hero__parametrs hero__parametrs_large">
             <div class="hero__parametrs__item">
               <span><strong>1 мин</strong></span>
               <span>пешком от метро</span>
@@ -53,72 +57,78 @@
               <span>первая очередь</span>
             </div>
           </div>
-          <img class="hero__image" src="/assets/images/Mask group.png" alt="Бизнес квартал">
+          <img id="hero__img" class="hero__image" src="./assets/images/Mask group.png" alt="Бизнес квартал">
           <nav>
             <ul class="nav hero-nav">
               <li class="nav__item nav__item_button"><a href="location.html">Расположение</a></li>
               <li class="nav__item nav__item_button"><a href="plans.html">Планировки</a></li>
             </ul>
           </nav>
-        </section>
+        </div>
+      </section>
         <section class="inf">
-          <div class="inf__text_1">
-            <h3 class="inf__subtitle">О проекте</h3>
-            <h2 class="inf__title">Уникальный проект в динамично развивающемся районе Москвы</h2>
-            <p class="inf__description_1"> Бизнес-квартал «Ясенево» расположен на пересечении ключевых маршрутов локации – в 1 мин. от действующей станции метро и автотрассы СБВ (дублёр МКАД) с удобным съездом на парковку. Здесь проходит единственный путь от жилых районов к метро, что обеспечивает высокую активность пешеходного трафика. </p>
-          </div>
-          <div class="inf__block">
-            <div class="inf__block__item">
-              <span><img class="inf__block__img" src="/assets/images/block/Image_1.png" alt="" width="100" height="100"></span>
-              <h3 class="inf__block__item__title">Повышенный класс очистки воздуха</h3>
+          <div class="container">
+            <div class="inf__text_1">
+              <h3 class="inf__subtitle">О проекте</h3>
+              <h2 class="inf__title">Уникальный проект в динамично развивающемся районе Москвы</h2>
+              <p class="inf__description_1"> Бизнес-квартал «Ясенево» расположен на пересечении ключевых маршрутов локации – в 1 мин. от действующей станции метро и автотрассы СБВ (дублёр МКАД) с удобным съездом на парковку. Здесь проходит единственный путь от жилых районов к метро, что обеспечивает высокую активность пешеходного трафика. </p>
             </div>
-            <div class="inf__block__item">
-              <span><img class="inf__block__img" src="/assets/images/block/Image_4.png" alt="" width="100" height="100" ></span>
-                <h3 class="inf__block__item__title">Возможна отделка офиса на выбор</h3>
+            <div class="inf__block">
+              <div class="inf__block__item">
+                <span><img class="inf__block__img" src="./assets/images/block/Image_1.png" alt="" width="100" height="100"></span>
+                <h3 class="inf__block__item__title">Повышенный класс очистки воздуха</h3>
               </div>
-            <div class="inf__block__item">
-              <span><img class="inf__block__img" src="/assets/images/block/Image_2.png" alt="" width="100" height="100" ></span>
-              <h3 class="inf__block__item__title">Открывающиеся окна с дистанционным управлением</h3>
-            </div>
-            <div class="inf__block__item">
-              <span><img class="inf__block__img" src="/assets/images/block/Image_5.png" alt="" width="100" height="100" ></span>
-                <h3 class="inf__block__item__title">Офисная кухня в каждом лоте</h3>
+              <div class="inf__block__item">
+                <span><img class="inf__block__img" src="./assets/images/block/Image_4.png" alt="" width="100" height="100" ></span>
+                  <h3 class="inf__block__item__title">Возможна отделка офиса на выбор</h3>
+                </div>
+              <div class="inf__block__item">
+                <span><img class="inf__block__img" src="./assets/images/block/Image_2.png" alt="" width="100" height="100" ></span>
+                <h3 class="inf__block__item__title">Открывающиеся окна с дистанционным управлением</h3>
               </div>
-            <div class="inf__block__item">
-              <span><img class="inf__block__img" src="/assets/images/block/Image_3.png" alt="" width="100" height="100" ></span>
-              <h3 class="inf__block__item__title">Паровое увлажнение воздуха</h3>
+              <div class="inf__block__item">
+                <span><img class="inf__block__img" src="./assets/images/block/Image_5.png" alt="" width="100" height="100" ></span>
+                  <h3 class="inf__block__item__title">Офисная кухня в каждом лоте</h3>
+                </div>
+              <div class="inf__block__item">
+                <span><img class="inf__block__img" src="./assets/images/block/Image_3.png" alt="" width="100" height="100" ></span>
+                <h3 class="inf__block__item__title">Паровое увлажнение воздуха</h3>
+              </div>
+            </div>
+            <div class="inf__text_2">
+              <p class="inf__description_2">Vita-офисы в бизнес-квартале – новые эффективные рабочие пространства на основе идеи витальности (жизненной силы), эстетики и функциональности. Создают благоприятное воздействие на эмоциональное состояние и работоспособность сотрудников, развитие бизнеса. Это единая цифровая среда, инфраструктура для резидентов и уникальные шеринг-помещения: комната для тимбилдинга, лекторий, кабинет врача, йога-класс и многое другое.</p>
+              <a inf__botton href="plans.html">Узнать больше</a>
             </div>
           </div>
-          <div class="inf__text_2">
-            <p class="inf__description_2">Vita-офисы в бизнес-квартале – новые эффективные рабочие пространства на основе идеи витальности (жизненной силы), эстетики и функциональности. Создают благоприятное воздействие на эмоциональное состояние и работоспособность сотрудников, развитие бизнеса. Это единая цифровая среда, инфраструктура для резидентов и уникальные шеринг-помещения: комната для тимбилдинга, лекторий, кабинет врача, йога-класс и многое другое.</p>
-            <a inf__botton href="plans.html">Узнать больше</a>
-          </div>
-          <img class="banner" src="/assets/images/banner_gl.png" alt="">
         </section>
+        <img class="banner" src="./assets/images/banner_gl.png" alt="">
         <section class="gallery">
-          <h3 class="gallery__subtitle">Инфраструктура</h3>
-          <h2 class="gallery__title">Район с готовой инфраструктурой</h2>
-          <div class="gallery__wrapper">
-            <div class="gallery__box box1"><img src="assets/images/gallery/box1.png" alt=""></div>
-            <div class="gallery__box box2"><img src="assets/images/gallery/box2.png" alt=""></div>
-            <div class="gallery__box box3"><img src="assets/images/gallery/box3.png" alt=""></div>
-            <div class="gallery__box box4"><img src="assets/images/gallery/box4.png" alt=""></div>
-            <div class="gallery__box box5"><img src="assets/images/gallery/box5.png" alt=""></div>
-            <div class="gallery__box box6"><img src="assets/images/gallery/box6.png" alt=""></div>
+          <div class="container">
+            <h3 class="gallery__subtitle">Инфраструктура</h3>
+            <h2 class="gallery__title">Район с готовой инфраструктурой</h2>
+            <div id="gallery" class="gallery__wrapper">
+              <div class="gallery__box box1"><img src="./assets/images/gallery/box1.png" alt=""></div>
+              <div class="gallery__box box2"><img src="./assets/images/gallery/box2.png" alt=""></div>
+              <div class="gallery__box box3"><img src="./assets/images/gallery/box3.png" alt=""></div>
+              <div class="gallery__box box4"><img src="./assets/images/gallery/box4.png" alt=""></div>
+              <div class="gallery__box box5"><img src="./assets/images/gallery/box5.png" alt=""></div>
+              <div class="gallery__box box6"><img src="./assets/images/gallery/box6.png" alt=""></div>
+            </div>
           </div>          
         </section>
         <section class="pdf">
-          <h3 class="pdf__subtitle">Подробно</h3>
-          <h2 class="pdf__title">Вся информация о проекте — в презентации</h2>
-            <ul class="pdf__spisok">
-            <li>25 слайдов подробной информации</li>
-            <li>Инфраструктура, благоустройство, расположение</li>
-            <li>Инжененрия, концепция и тд.</li>
-          </ul>
-          <a href="/assets/Obrazets-polnogo-dizai-n-proekta-1.pdf" class="pdf__link pdf__link_button">Скачать презентацию</a>
-          <img src="/assets/images/image 6.png" alt="" class="pdf__image">
+          <div class="container">
+            <h3 class="pdf__subtitle">Подробно</h3>
+            <h2 class="pdf__title">Вся информация о проекте — в презентации</h2>
+              <ul class="pdf__spisok">
+              <li>25 слайдов подробной информации</li>
+              <li>Инфраструктура, благоустройство, расположение</li>
+              <li>Инжененрия, концепция и тд.</li>
+            </ul>
+            <a href="./assets/Obrazets-polnogo-dizai-n-proekta-1.pdf" class="pdf__link pdf__link_button">Скачать презентацию</a>
+            <img src="./assets/images/image 6.png" alt="" class="pdf__image">
+          </div>
         </section>
-      </div>
     </main>
   </div>
   <footer>

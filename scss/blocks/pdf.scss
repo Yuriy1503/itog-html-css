@@ -46,14 +46,14 @@
         color: white;
         position: absolute;
         left: 51px;
-        margin-top: 117px;
+        margin-top: 167px;
     }
 
     &__image {
         display: inline-block;
         width: 138px;
         flex-shrink: 0;
-        position: absolute;
+        position: static;
         left: 55vw;
         margin-top: -2vw;
     }

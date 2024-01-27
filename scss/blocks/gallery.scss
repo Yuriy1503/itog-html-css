@@ -2,6 +2,7 @@
 
 .gallery {
     padding: 100px 0 110px 0;
+    margin: 0 50px;
     &__subtitle {
         color: $GrayscaleBlack;
         font-size: 16px;
@@ -12,7 +13,7 @@
         &::after {
             position: absolute;
             content: '';
-            left: 210px;
+            left: auto;
             width: 473px;
             height: 2px;
             margin: 11px;

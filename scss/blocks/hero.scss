@@ -16,14 +16,18 @@
       position: absolute;
       content: '';
       top: 150px;
-      right: 0;
-      width: 400px;
+      right: -75px;
+      width: 465px;
       height: 2px;
       background: #000;
+      margin: 0 120px 0 0;
     }
 
     &_smaller {
       font-size: 52px;
+      &::after {
+        width: 422px;
+      }
     }
   }
 
@@ -68,6 +72,7 @@
 .hero-nav {
   display: none;
 }
+
 
 // @media screen and (max-width: 1279px) and (min-width: 768px) {
 //   .hero {
