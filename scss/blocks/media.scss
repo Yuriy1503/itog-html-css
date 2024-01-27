@@ -54,7 +54,7 @@
             &:not(.hero__parametrs_large) {
                 position: absolute;
                 top: auto;
-                right: -47px;
+                right: 3px;
                 height: 160px;
                 width: 240px;
             }
@@ -73,6 +73,9 @@
         width: 100%;
         grid-template-columns: 33fr;
 
+    }
+    .description__inf {
+        margin: 0;
     }
 
     .inf__description_2 {
@@ -205,6 +208,11 @@
             width: 233px;
             margin: 204px 0 0px 20px;
         }
+    }
+
+    .plans__block {
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(3,300px);
     }
 
     .pdf {
